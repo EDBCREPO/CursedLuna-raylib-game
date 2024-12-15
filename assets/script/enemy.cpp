@@ -9,7 +9,7 @@ namespace rl { namespace game {
         struct NODE {
             Rectangle pos = { GetRenderWidth()*0.5f, GetRenderHeight()*0.5f, 150, 150 };
             Texture   img = GetAttr("Assets").as<array_t<Texture>>()[2];
-            float   speed = 300.0f, health = 1000;
+            float   speed = 400.0f, health = 1000;
             queue_t<Vector3> tail; Vector2 dir;
         };  ptr_t<NODE> obj = new NODE();
 
@@ -43,10 +43,13 @@ namespace rl { namespace game {
                 while( obj->health > 0 ){ coNext; }
                 AppendScene( GetAttr("Scene").as<array_t<function_t<void,ptr_t<Scene>>>>()[2] );
             coStop
-            }(); [=](){ 
+            }(); 
+            
+            [=](){ 
             coStart; coDelay( 100 );
                 obj->tail.push({ obj->pos.x, obj->pos.y, 80.0f });
-            coStop; }();
+            coStop; 
+            }();
 
             auto x = obj->tail.first(); while( x != nullptr ){ auto y = x->next;
                 if( x->data.z <= 0 ){ goto DONE; } x->data.z -= delta * 80.0f;

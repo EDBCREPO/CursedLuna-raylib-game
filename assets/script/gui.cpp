@@ -52,7 +52,7 @@ namespace rl { namespace game {
         gui->onDraw([=](){
 
             DrawRectangleLines( 8*w/100, 4*h/100, 84*w/100, 4*h/100, WHITE );
-            DrawRectangle( 10*w/100, 3*h/100, 80*w/100, 3*h/100,  Color({ 69, 2, 41, 255 }) );
+            DrawRectangle( 10*w/100, 3*h/100, 80*w/100, 3*h/100, Color({ 69, 2, 41, 255 }) );
             DrawRectangleLines( 10*w/100, 3*h/100, 80*w/100, 3*h/100, WHITE );
             DrawRectangle( 10*w/100, 3*h/100, 80*w/100*sht(), 3*h/100, WHITE );
 
@@ -80,7 +80,7 @@ namespace rl { namespace game {
         gui->onDraw([=](){
 
             DrawRectangleLines( 2*w/100, 86*h/100, w/13, w/13, WHITE );
-            DrawRectangle( 2*w/100+2, 86*h/100+2, w/13, w/13, BLACK );
+            DrawRectangle( 2*w/100+2, 86*h/100+2, w/13, w/13, Color({ 45, 2, 37, 255 }) );
             DrawRectangleLines( 2*w/100+4, 86*h/100+4, w/13-4, w/13-4, WHITE );
 
             DrawTexturePro( obj->img, { 64*1.0f*obj->frame, 0, 64, 64 },

@@ -30,9 +30,12 @@ void onMain() {
 
     rl::onClose([](){
         forEach( x, rl::GetAttr("Assets").as<array_t<rl::Texture>>() ){ 
-            if( rl::IsTextureReady(x) ){ rl::UnloadTexture(x); }
+            if( rl::IsTextureValid(x) ){ rl::UnloadTexture(x); }
         }   console::log("Closed"); rl::Close();
     });
-    
+
+    rl::onDraw([=](){
+        rl::DrawFPS( 10, 10 );
+    });
 
 }

@@ -25,7 +25,6 @@ namespace rl {
     #include <raylib/raylib.h>
     /*---------------------*/
     #include <raylib/raygl.h>
-    #include <raylib/raygui.h>
     #include <raylib/raymath.h>
 }
 
@@ -236,22 +235,22 @@ public:
 
         id.push( rl::onLoop([=]( float delta ){ 
             if( !self->exists() ){ self->free(); return; } 
-                self->onLoop.emit( delta );
+                 self->onLoop.emit( delta );
         }) );
 
         id.push( rl::onDraw([=](){ 
             if( !self->exists() ){ return; } 
-                self->onDraw.emit(); 
+                 self->onDraw.emit(); 
         }) );
 
         id.push( rl::on3DDraw([=](){ 
             if( !self->exists() ){ return; } 
-                self->on3DDraw.emit(); 
+                 self->on3DDraw.emit(); 
         }) );
 
         id.push( rl::on2DDraw([=](){ 
             if( !self->exists() ){ return; } 
-                self->on2DDraw.emit(); 
+                 self->on2DDraw.emit(); 
         }) );
 
         auto idr = self->onRemove.once([=](){
@@ -294,9 +293,9 @@ public:
 
     template< class T, class... V >
     Item& AppendItem( string_t name, T cb, V... args ) const noexcept {
-        auto item = Item( cb, args... ); if( name == nullptr )
-        { name.resize(sizeof(item)); memcpy( name.get(), (void*)&item, sizeof(item) ); }
-          obj->items[name] = item; return obj->items[name];
+        auto item = Item( cb, args... ); if( name == nullptr ){ 
+            name.resize(sizeof(item)); memcpy( name.get(), (void*)&item, sizeof(item) ); 
+        }   obj->items[name] = item; return obj->items[name];
     }
 
     void RemoveItem( string_t name ) const noexcept {

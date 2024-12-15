@@ -67,8 +67,8 @@ namespace rl { namespace game {
             while( IsKeyDown(KEY_SPACE) ){ coNext; }
 
             while( !IsKeyDown(KEY_SPACE) || !imv() ){ 
-               if( obj->d ){ coGoto(1); } 
-               x = 1; obj->b = 0; coNext;
+               if( obj->d ){ coGoto(1); } x = 1; 
+                   obj->b = 0; coNext;
             }
 
             if( stt()[4] <= 0 ){ coGoto(0); }
@@ -81,7 +81,7 @@ namespace rl { namespace game {
 
             coYield(1); while( x != 0 ){
                 obj->frame = 64 * ( x - 1 );
-                x++; x %= 12; coDelay(5);
+                x++; x%=12; coDelay(10);
                 obj->b = 1; obj->d = 0;
             }
 
@@ -274,8 +274,7 @@ namespace rl { namespace game {
                 flash.pos   = x->data.pos;
                 obj->flash.push( flash );
 
-                x = x->next;
-            }   b =! b;
+            x = x->next; } b =! b;
         
         coStop
         }();});
@@ -341,8 +340,8 @@ namespace rl { namespace game {
             }
 
             auto y = obj->flash.first(); while( y!=nullptr ){
-                if( y->data.b ){ DrawCircleV( y->data.pos, y->data.size, y->data.color ); }
-                else      { DrawCircleLinesV( y->data.pos, y->data.size, y->data.color ); }
+                if( y->data.b ){ DrawCircleV( y->data.pos, y->data.size, y->data.color );      }
+                else           { DrawCircleLinesV( y->data.pos, y->data.size, y->data.color ); }
                 y = y->next;
             }
 
