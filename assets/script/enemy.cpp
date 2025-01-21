@@ -2,7 +2,7 @@
 
 /*────────────────────────────────────────────────────────────────────────────*/
 
-namespace rl { namespace game {
+namespace nodepp { namespace rl { namespace game {
 
     void enemy( ptr_t<Item> self ) {
 
@@ -117,6 +117,6 @@ namespace rl { namespace game {
 
     }
 
-}}
+}}}
 
 /*────────────────────────────────────────────────────────────────────────────*/

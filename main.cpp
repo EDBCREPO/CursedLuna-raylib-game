@@ -1,9 +1,9 @@
 #include <nodepp/nodepp.h>
 #include <nodepp/worker.h>
+#include <raylib/game.h>
 
 using namespace nodepp;
 
-#include "assets/script/game.cpp"
 #include "assets/scenes/scene_2.cpp"
 #include "assets/scenes/scene_1.cpp"
 #include "assets/scenes/scene_0.cpp"

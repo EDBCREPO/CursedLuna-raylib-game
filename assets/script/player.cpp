@@ -2,7 +2,7 @@
 
 /*────────────────────────────────────────────────────────────────────────────*/
 
-namespace rl { namespace game {
+namespace nodepp { namespace rl { namespace game {
 
     void player_power( ptr_t<Item> self, ptr_t<Item> player ){
 
@@ -116,11 +116,7 @@ namespace rl { namespace game {
 
     }
 
-}}
-
 /*────────────────────────────────────────────────────────────────────────────*/
-
-namespace rl { namespace game {
 
     struct bullet_t {
         Vector2 pos = { 0, 0 };
@@ -355,11 +351,7 @@ namespace rl { namespace game {
 
     }
 
-}}
-
 /*────────────────────────────────────────────────────────────────────────────*/
-
-namespace rl { namespace game {
 
     struct prop_t {
         Vector2 pos = { 0, 0 };
@@ -408,11 +400,7 @@ namespace rl { namespace game {
 
     }
 
-}}
-
 /*────────────────────────────────────────────────────────────────────────────*/
-
-namespace rl { namespace game {
 
     void player( ptr_t<Item> self ) {
 
@@ -571,6 +559,6 @@ namespace rl { namespace game {
 
     }
 
-}}
+}}}
 
 /*────────────────────────────────────────────────────────────────────────────*/

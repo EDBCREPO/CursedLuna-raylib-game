@@ -5,7 +5,7 @@
 #include "../script/item.cpp"
 #include "../script/gui.cpp"
 
-namespace rl { namespace scene {
+namespace nodepp { namespace rl { namespace scene {
 
     void scene_0( ptr_t<Scene> self ) {
 
@@ -42,4 +42,4 @@ namespace rl { namespace scene {
 
     }
 
-}}
+}}}

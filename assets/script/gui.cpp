@@ -2,7 +2,7 @@
 
 /*────────────────────────────────────────────────────────────────────────────*/
 
-namespace rl { namespace game {
+namespace nodepp { namespace rl { namespace game {
 
     void gui_aim( ptr_t<Item> self ) {
 
@@ -38,11 +38,7 @@ namespace rl { namespace game {
 
     }
 
-}}
-
 /*────────────────────────────────────────────────────────────────────────────*/
-
-namespace rl { namespace game {
 
     void enemy_stats( ptr_t<Item> self, ptr_t<Item> gui ){
 
@@ -60,11 +56,7 @@ namespace rl { namespace game {
 
     }
 
-}}
-
 /*────────────────────────────────────────────────────────────────────────────*/
-
-namespace rl { namespace game {
 
     void player_stats( ptr_t<Item> self, ptr_t<Item> gui ){
 
@@ -134,11 +126,7 @@ namespace rl { namespace game {
 
     }
 
-}}
-
 /*────────────────────────────────────────────────────────────────────────────*/
-
-namespace rl { namespace game {
 
     void gui( ptr_t<Item> self ){
 
@@ -159,6 +147,6 @@ namespace rl { namespace game {
 
     }
 
-}}
+}}}
 
 /*────────────────────────────────────────────────────────────────────────────*/
