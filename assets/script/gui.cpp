@@ -10,8 +10,6 @@ namespace nodepp { namespace rl { namespace game {
             Vector2 pos = { 0, 0 };
             bool      b = false; 
         };  ptr_t<NODE> obj = new NODE(); 
-        
-        DisableCursor();
 
         self->onDraw([=](){
             if( obj->b ){
@@ -65,7 +63,7 @@ namespace nodepp { namespace rl { namespace game {
         float  h = GetRenderHeight(), w = GetRenderWidth();
 
         struct NODE {
-           Texture img = GetAttr("Assets").as<array_t<Texture>>()[3];
+           Texture img = GetAttr("Sprite").as<array_t<Texture>>()[2];
            uint  frame = 0;
         }; ptr_t<NODE> obj = new NODE();
 

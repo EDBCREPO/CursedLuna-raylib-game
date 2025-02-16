@@ -16,7 +16,7 @@ namespace nodepp { namespace rl { namespace game {
     void item( ptr_t<Item> self ){
 
         struct NODE {
-            Texture img = GetAttr("Assets").as<array_t<Texture>>()[4];
+            Texture img = GetAttr("Sprite").as<array_t<Texture>>()[3];
             queue_t<item_t> particle, init, list;
         };  ptr_t<NODE> obj = new NODE();
 

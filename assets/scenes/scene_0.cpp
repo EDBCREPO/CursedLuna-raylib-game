@@ -19,9 +19,7 @@ namespace nodepp { namespace rl { namespace scene {
         self->AppendItem( "player", game::player );
         self->AppendItem( "gui",    game::gui    );
 
-        self->onLoop([=]( float delta ){ 
-            obj->pos = GetMousePosition(); 
-        });
+        self->onLoop([=]( float delta ){ obj->pos = GetMousePosition(); });
 
         self->onDraw([=](){
             ClearBackground( Color({ 69, 2, 41, 255 }) );

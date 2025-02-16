@@ -7,7 +7,7 @@ namespace nodepp { namespace rl { namespace game {
     void player_power( ptr_t<Item> self, ptr_t<Item> player ){
 
         struct NODE {
-            Texture img = GetAttr("Assets").as<array_t<Texture>>()[1];
+            Texture img = GetAttr("Sprite").as<array_t<Texture>>()[1];
             queue_t<Rectangle> tail;
             float frame  = 0.0f;
             bool      b  = 0;
@@ -130,7 +130,7 @@ namespace nodepp { namespace rl { namespace game {
     void player_bullet( ptr_t<Item> self, ptr_t<Item> player ) {
 
         struct NODE {
-            Texture img = GetAttr("Assets").as<array_t<Texture>>()[5];
+            Texture img = GetAttr("Sprite").as<array_t<Texture>>()[5];
             Vector2 pos[2] = { { 0, 0 }, { 0, 0 } };
             queue_t<bullet_t> bullet, bomb, flash;
             float size  = 3.0f;
@@ -363,7 +363,7 @@ namespace nodepp { namespace rl { namespace game {
     void player_prop( ptr_t<Item> self, ptr_t<Item> player ) {
 
         struct NODE {
-            Texture img = GetAttr("Assets").as<array_t<Texture>>()[6];
+            Texture img = GetAttr("Sprite").as<array_t<Texture>>()[6];
             queue_t<prop_t> list;
         };  ptr_t<NODE> obj = new NODE();
 
@@ -406,7 +406,7 @@ namespace nodepp { namespace rl { namespace game {
 
         struct NODE {
             Rectangle pos  = { GetRenderWidth()*0.5f, GetRenderHeight()*0.5f, 32, 32 };
-            Texture   img  = GetAttr("Assets").as<array_t<Texture>>()[3];
+            Texture   img  = GetAttr("Sprite").as<array_t<Texture>>()[2];
             int  bullet[6] = { 5, 300, 100, 5, 5, 1 };
             int  defolt[6] = { 5, 300, 100, 5, 5, 1 };
             Vector2   dir  = { 0, 0 };

@@ -26,7 +26,7 @@ namespace nodepp { namespace rl { namespace scene {
             if( CheckCollisionPointRec( GetMousePosition(), 
                 Rectangle({ width1, 400, 150, 40 }) 
             )){ if ( IsMouseButtonPressed(0) ) {
-                    AppendScene( GetAttr("Scene").as<array_t<function_t<void,ptr_t<Scene>>>>()[0] );
+                     AppendScene( GetAttr("Scene").as<array_t<function_t<void,ptr_t<Scene>>>>()[0] );
                 }    obj->b=1;
             } else { obj->b=0; }
 

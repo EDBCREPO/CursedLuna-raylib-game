@@ -8,7 +8,7 @@ namespace nodepp { namespace rl { namespace game {
 
         struct NODE {
             Rectangle pos = { GetRenderWidth()*0.5f, GetRenderHeight()*0.5f, 150, 150 };
-            Texture   img = GetAttr("Assets").as<array_t<Texture>>()[2];
+            Texture   img = GetAttr("Sprite").as<array_t<Texture>>()[4];
             float   speed = 400.0f, health = 1000;
             queue_t<Vector3> tail; Vector2 dir;
         };  ptr_t<NODE> obj = new NODE();
