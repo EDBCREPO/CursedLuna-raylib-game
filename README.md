@@ -1,5 +1,6 @@
 # Cursed Luna
-A simple game made with C++, Nodepp and raylib
+A simple game made with C++, Nodepp and raylib 
+https://edbcrepo.itch.io/cursed-luna
 
 ## Dependencies
 ```bash
