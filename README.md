@@ -9,7 +9,7 @@ https://edbcrepo.itch.io/cursed-luna
 ```
 
 ## Preview
-[Preview](https://github.com/user-attachments/assets/b09a8798-3dba-4e7b-9996-79415deead11)
+https://github.com/user-attachments/assets/3647b5b6-fbfd-4281-af0f-f35f3260a319
 
 ## Build & Use
 ```bash
