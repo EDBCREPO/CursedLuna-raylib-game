@@ -1,6 +1,6 @@
 #pragma once
 
-namespace nodepp { namespace rl { namespace scene {
+namespace rl { namespace scene {
 
     void scene_1( ptr_t<Scene> self ) {
 
@@ -58,4 +58,4 @@ namespace nodepp { namespace rl { namespace scene {
 
     }
 
-}}}
+}}

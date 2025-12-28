@@ -5,14 +5,14 @@
 #include "../script/item.cpp"
 #include "../script/gui.cpp"
 
-namespace nodepp { namespace rl { namespace scene {
+namespace rl { namespace scene {
 
     void scene_0( ptr_t<Scene> self ) {
 
         struct NODE {
             bool       x = false;
             Vector2  pos = { 0, 0 };
-        };  ptr_t<NODE> obj = new NODE();
+        };  auto obj = type::bind( NODE() );
 
         self->AppendItem( "enemy",  game::enemy  );
         self->AppendItem( "item",   game::item   );
@@ -40,4 +40,4 @@ namespace nodepp { namespace rl { namespace scene {
 
     }
 
-}}}
+}}

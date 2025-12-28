@@ -2,7 +2,7 @@
 
 /*────────────────────────────────────────────────────────────────────────────*/
 
-namespace nodepp { namespace rl { namespace game {
+namespace rl { namespace game {
 
     void player_power( ptr_t<Item> self, ptr_t<Item> player ){
 
@@ -559,6 +559,6 @@ namespace nodepp { namespace rl { namespace game {
 
     }
 
-}}}
+}}
 
 /*────────────────────────────────────────────────────────────────────────────*/

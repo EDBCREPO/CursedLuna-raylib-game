@@ -2,7 +2,7 @@
 
 /*────────────────────────────────────────────────────────────────────────────*/
 
-namespace nodepp { namespace rl { namespace game {
+namespace rl { namespace game {
 
     void gui_aim( ptr_t<Item> self ) {
 
@@ -145,6 +145,6 @@ namespace nodepp { namespace rl { namespace game {
 
     }
 
-}}}
+}}
 
 /*────────────────────────────────────────────────────────────────────────────*/

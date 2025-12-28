@@ -2,7 +2,7 @@
 
 /*────────────────────────────────────────────────────────────────────────────*/
 
-namespace nodepp { namespace rl { namespace game {
+namespace rl { namespace game {
 
     struct item_t {
         Color    col;
@@ -149,6 +149,6 @@ namespace nodepp { namespace rl { namespace game {
 
     }
 
-}}}
+}}
 
 /*────────────────────────────────────────────────────────────────────────────*/
