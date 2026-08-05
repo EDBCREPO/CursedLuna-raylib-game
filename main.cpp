@@ -1,5 +1,4 @@
 #include <nodepp/nodepp.h>
-#include <nodepp/worker.h>
 
 using namespace nodepp;
 

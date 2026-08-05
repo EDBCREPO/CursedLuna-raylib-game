@@ -97,7 +97,7 @@ namespace rl {
 
     void Init( int width, int height, uint fps, string_t title ) {
         InitWindow( width, height, title.get() ); SetTargetFPS( fps ); 
-        process::onSIGEXIT([](){ Close(); }); 
+    //  process::onSIGEXIT([](){ Close(); }); 
         
         process::add( coroutine::add( COROUTINE(){
         coBegin
